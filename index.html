@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City/Weather Search</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <!-- YOUR CODE HERE -->
-  
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City/Weather Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- YOUR CODE HERE -->
+    <div class="search" id="fetchBtn">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter City Name..."
+        spellcheck="false"
+      />
+      <button id="fetchBtn">Search</button>
+    </div>
+
+    <section>
+      <div class="main">
+        <h1 class="city"></h1>
+        <h1 class="temperature"></h1>
+      </div>
+
+      <table class="table" border="1" cellspacing="0">
+        <tr>
+          <th>Country</th>
+          <td class="country"></td>
+        </tr>
+        <tr>
+          <th>Timezone</th>
+          <td class="timezone"></td>
+        </tr>
+        <tr>
+          <th>Population</th>
+          <td class="population"></td>
+        </tr>
+        <tr>
+          <th>Tomorrow's Forecast</th>
+          <td>
+            Low: <span class="forecast_low"></span><br />
+            Max: <span class="forecast_max"></span>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
